@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #00c6ff, #00c6ff);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 20px 0; 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            position: relative;
+        }
+        .container.personal-info {
+            background-color: #fff;
+        }
+
+        .container.education {
+            background-color: #ffffff;
+        }
+
+        .container.experience {
+            background-color: #ffffff;
+        }
+
+        .container.interests {
+            background-color: #ffffff;
+        }
+
+-/*
+
+        
+        .profile-pic {
+            width: 300px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            display: block;
+            margin: 20px auto;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            max-width: none; /* Remove the max-width constraint */
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #0072ff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #0072ff;
+        }
+        
+        ol, ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        ol li, ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #0072ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>MY PORTFOLIO</h1>
+    </div>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#personal-info">Personal Information</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#interests">Interests</a>
+    </div>
+
+
+    <div class="container personal-info">
+        <img src="img.jpg" alt="Profile Picture" class="profile-pic">
+        <div id="personal-info" class="center">
+            <h2>Personal Information</h2>
+        </div>
+        <ol>
+            <li><strong>Name:</strong> J Jogesh</li>
+            <li><strong>College:</strong> Sri Krishna College of Technology</li>
+            <li><strong>Programming Languages:</strong>
+                <ol>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>JAVA</li>
+                    <li>React</li>
+                </ol>
+            </li>
+            <li><strong>Skills:</strong>
+                <ol>
+                    <li>Web Development: Experience in building responsive websites using HTML, CSS, and JavaScript.</li>
+                    <li>Software Development: Proficient in writing clean and efficient code in C++ and Python.</li>
+                    <li>Problem Solving: Strong analytical and problem-solving skills demonstrated through various coding challenges and projects.</li>
+                </ol>
+            </li>
+            <li><strong>Projects:</strong>
+                <ol>
+                    <li>Job Search App: Developed a job searching application using React.</li>
+                    <li>Traveling App: Developed a traveling application using Python to manage travels.</li>
+                </ol>
+            </li>
+            <li><strong>Contact Information:</strong>
+                <ol>
+                    <li>Email: <a href="mailto:jjogesh2004@gmail.com">jjogesh2004@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/j-jogesh-627a72316" target="_blank">https://www.linkedin.com/in/j-jogesh-627a72316</a></li>
+                    <li>GitHub: <a href="https://github.com/Jogesh550" target="_blank">https://github.com/Jogesh550</a></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <div class="container education">
+        <div id="education" class="section">
+            <div class="section-title">Education</div>
+            <div class="section-content">
+                <p><strong>Bachelor of Engineering (B.E) in Electronics and Communication Engineering</strong></p>
+                <p>Sri Krishna College of Technology, Coimbatore</p>
+                <p>Graduated: May 2026</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container experience">
+        <div id="experience" class="section">
+            <div class="section-title">Experience</div>
+            <div class="section-content">
+                <p><strong>Internship at NLCIL Neyveli</strong></p>
+          
+            </div>
+        </div>
+    </div>
+        
+    <div class="container interests">
+        <div id="interests" class="section">
+            <div class="section-title">Interests</div>
+            <div class="section-content">
+                <ul>
+                    <li>Travelling</li>
+                    <li>Car Driving</li>
+                    <li>Editing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Jogesh. All rights reserved.</p>
+    </div>
+</body>
+</html>
